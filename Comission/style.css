@@ -1,0 +1,98 @@
+:root {
+    --shadowStandard: 0 0 .5rem rgba(0, 0, 0, 0.3);
+    --borderRadiusStandard: 1rem;
+    --accentColor1: rgb(96, 126, 160);
+}
+
+body {
+    background-color: var(--accentColor1);
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(96, 126, 160, 0.7);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    transition-duration: 200ms;
+}
+
+.navLogoImg {
+    height: 4rem;
+    position: absolute;
+}
+
+.navContainerForLinks {
+    margin: auto;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.navLinks {
+    padding: 1rem;
+    color: white;
+    font-weight: 500;
+}
+
+.pagecontainer {
+    margin: auto;
+    margin-top: 1rem;
+    width: calc(100% - 2rem);
+    max-width: 80rem;
+}
+
+.carousel-inner {
+    border-radius: var(--borderRadiusStandard);
+    box-shadow: var(--shadowStandard);
+    border: 0.1rem solid white;
+}
+
+.card {
+    border-radius: var(--borderRadiusStandard);
+        box-shadow: var(--shadowStandard);
+    overflow: hidden;
+    margin-top: 2rem;
+
+    border: 0.05rem solid gray;
+}
+
+.textLight {
+    color: rgb(255, 255, 255);
+}
+
+.cardImage {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.accent {
+    margin-top: -15rem;
+    padding-top: 17rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    z-index: -1;
+    background-color: white;
+}
+
+.panel {
+    padding: 2rem;
+    padding-top: 0;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-aspect-ratio: 4/5) {
+    .slide1 {
+        content: url(media/banner-vertical-1.jpg);
+    }
+
+    .slide2 {
+        content: url(media/banner-vertical-1.jpg);
+    }
+
+}
