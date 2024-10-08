@@ -23,6 +23,7 @@ nav {
 .navLogoImg {
     height: 4rem;
     position: absolute;
+    cursor: pointer;
 }
 
 .navContainerForLinks {
@@ -64,9 +65,11 @@ nav {
     box-shadow: var(--shadowStandard);
     overflow: hidden;
     margin-top: 2rem;
-    border: 0.05rem solid gray;
     height: 30rem;
     background-color: black;
+    cursor: pointer;
+    transition-duration: 200ms;
+    outline: 0.1rem solid rgba(255, 255, 255, 0);
 }
 
 .textLight {
@@ -78,7 +81,7 @@ nav {
     height: 100%;
     object-fit: cover;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.5)));
-
+    transition-duration: 500ms;
 }
 
 .cardBody {
@@ -87,9 +90,18 @@ nav {
     padding: 2rem;
 }
 
+.cardObj:hover .cardImage {
+    transform: scale(1.2);
+}
+
+.cardObj:hover {
+    outline: 0.1rem solid rgb(255, 255, 255);
+}
+
 .accent {
     margin-top: -15rem;
-    padding-top: 17rem;
+    padding-top: 16rem;
+    padding-bottom: 1rem;
     margin-bottom: 3rem;
     width: 100%;
     z-index: -1;
@@ -104,6 +116,7 @@ nav {
 
 p {
     font-size: 1.4rem;
+    margin: 0;
 }
 
 @media only screen and (max-aspect-ratio: 4/5) {
@@ -118,7 +131,7 @@ p {
 }
 
 @media only screen and (max-width: 1000px) {
-    .navContainerForLinks{
+    .navContainerForLinks {
         display: none;
     }
 }
