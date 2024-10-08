@@ -36,6 +36,15 @@ nav {
     font-weight: 500;
 }
 
+.navContact {
+    position: absolute;
+    margin-top: 0.5rem;
+    padding: 1rem 2rem 0 2rem;
+    color: white;
+    font-weight: 500;
+    right: 0;
+}
+
 .pagecontainer {
     margin: auto;
     margin-top: 1rem;
